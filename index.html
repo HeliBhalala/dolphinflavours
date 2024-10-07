@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolphin Flavours - Everest Essence</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fa;
+            color: #333;
+            transition: background-color 0.5s;
+        }
+
+        header {
+            background: linear-gradient(to right, #2193b0, #6dd5ed);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 3em;
+            margin: 0;
+        }
+
+        header h2 {
+            font-weight: 400;
+            font-size: 1.5em;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .flavours {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0 -10px;
+        }
+
+        .flavour-card {
+            background: #ffffff;
+            border: 2px solid #007BFF;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            color: #333;
+        }
+
+        .flavour-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .flavour-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 223, 186, 0.3); /* Light peach */
+            z-index: 0;
+            transition: opacity 0.3s;
+            opacity: 0;
+        }
+
+        .flavour-card:hover::before {
+            opacity: 1;
+        }
+
+        .flavour-card h4 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            margin: 10px 0 0 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e7f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .contact h3 {
+            color: #FF6347; /* Tomato */
+            font-weight: 700;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #007BFF;
+            color: white;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+
+        @media (max-width: 600px) {
+            .flavour-card {
+                width: 90%;
+            }
+        }
+
+        /* Additional styles for colors */
+        .flavour-card:nth-child(odd) {
+            border-color: #FF5733; /* Red */
+        }
+        .flavour-card:nth-child(even) {
+            border-color: #FFC300; /* Yellow */
+        }
+        .flavour-card:nth-child(3n) {
+            border-color: #DAF7A6; /* Light green */
+        }
+        .flavour-card:nth-child(4n) {
+            border-color: #C70039; /* Dark red */
+        }
+        .flavour-card:nth-child(5n) {
+            border-color: #581845; /* Dark purple */
+        }
+        .flavour-card:nth-child(6n) {
+            border-color: #900C3F; /* Dark pink */
+        }
+        .flavour-card:nth-child(7n) {
+            border-color: #1C2833; /* Dark blue */
+        }
+        .flavour-card:nth-child(8n) {
+            border-color: #FFC300; /* Light orange */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dolphin Flavours</h1>
+        <h2>Welcome to Everest Essence</h2>
+        <h3>We know what you need.
+            Our company provides varity of flavours and many more as per your need.<h3>
+    </header>
+
+    <main>
+        <section class="flavours">
+            
+            <div class="flavour-card">
+                <h4>Mango Fruity</h4>
+            </div>
+            <div class="flavour-card">
+                <h4>D-Cola</h4>
+            </div>
+            <div class="flavour-card">
+                <h4>Mango Special</h4>
+            </div>
+            <div class="flavour-card">
+                <h4>Pineapple Special</h4>
+            </div>
+            <div class="flavour-card">
+                <h4>Orange Special</h4>
+            </div>
+            <div class="flavour-card">
+                <h4>Lychee Special</h4>
+            </div>
+            <div class="flavour-card">
+                <h4>Blueberry Special</h4>
+            </div>
+            <div class="flavour-card">
+                <h4>Pepio Special</h4>
+            </div>
+            <div class="flavour-card">
+                <h4>Vimto Special</h4>
+            </div>
+            <div class="flavour-card">
+                <h4>Red Jamfal Special</h4>
+            </div>
+            <div class="flavour-card">
+                <h4>Muskmelon Special</h4>
+            </div>
+            <div class="flavour-card">
+                <h4>Kiwi Special</h4>
+            </div>
+            <div class="flavour-card">
+                <h4>Clear Lemone</h4>
+            </div>
+            <div class="flavour-card">
+                <h4>Lime Lemone</h4>
+            </div>
+            <div class="flavour-card">
+                <h4>D-Orange</h4>
+            </div>
+            <div class="flavour-card">
+                <h4>M-Orange</h4>
+            </div>
+            <div class="flavour-card">
+                <h4>Beer</h4>
+            </div>
+            <div class="flavour-card">
+                <h4>Fruit Beer</h4>
+            </div>
+            <div class="flavour-card">
+                <h4>Guava</h4>
+            </div>
+            <div class="flavour-card">
+                <h4>Pineapple</h4>
+            </div>
+            <div class="flavour-card">
+                <h4>Mango Green</h4>
+            </div>
+            <div class="flavour-card">
+                <h4>Black Jeera Masala</h4>
+            </div>
+            <div class="flavour-card">
+                <h4>Kala Khataa</h4>
+            </div>
+            <div class="flavour-card">
+                <h4>Anis</h4>
+            </div>
+                        <div class="flavour-card">
+                <h4>White Jeera Masala</h4>
+            </div>
+            <div class="flavour-card">
+                <h4>Phunia Masala</h4>
+            </div>
+            <div class="flavour-card">
+                <h4>Jeera Special</h4>
+            </div>
+            <div class="flavour-card">
+                <h4>Ice-cream Soda</h4>
+            </div>
+            <div class="flavour-card">
+                <h4>Dadam(Pomegranate)</h4>
+            </div>
+            <div class="flavour-card">
+                <h4>Sahi Gulab (Rose)</h4>
+            </div>
+            <div class="flavour-card">
+                <h4>Mango Ripe</h4>
+            </div>
+            <div class="flavour-card">
+                <h4>Apple</h4>
+            </div>
+            <div class="flavour-card">
+                <h4>Tring(Sting/Energy Drink)</h4>
+            </div>
+            <div class="flavour-card">
+                <h4>Pink Bull(Energy Drink)</h4>
+            </div>
+            <div class="flavour-card">
+                <h4>Strawberry Special</h4>
+            </div>
+        </section>
+
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <p>Customer Care: <strong>+91 9724696505</strong></p>
+            <p>Email: <a href="mailto:customercare.everest@gmail.com">customercare.everest@gmail.com</a></p>
+            <p>Address: <strong>Everest Essence, Opp. Parekh Paper Mill, Near Madhuram Hospital, Jail Chowk, Gondal-360311, District-Rajkot (Gujarat)</strong></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Dolphin Flavours. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // You can add any JavaScript here for future interactivity
+    </script>
+</body>
+</html>
